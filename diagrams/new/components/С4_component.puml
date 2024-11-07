@@ -1,0 +1,93 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+AddRelTag("async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DashedLine())
+AddRelTag("sync/async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DottedLine())
+
+
+LAYOUT_WITH_LEGEND()
+title Диагрмма компонентов для системы "Умный дом"
+
+ContainerDb(user_service_db, "База данных сервиса пользователей", "SQL postgres", "Хранит данные пользователя: первональные данные, хэши паролей и т.д")
+ContainerDb(device_service_db, "База данных сервиса управления устройств", "SQL postgres", "Хранит данные устройств, данные дома пользователей")
+Container(api_gateway, "Шлюз", "Отвечает за балансировку запросов, авторизацию, управление сессиями", $tags="backendContainer")
+Container(message_broker, "Брокер сообщений", "java, Kafka", "центральный элемент асинхронного взаимодействия сервисов")
+Container(service_discovery, "Service discovery", "Golang, consul", "Отвечает за регистрацию слубж и выдачу данных служб по запросу")
+ContainerDb(telemetry_service_write_main_db, "База данных на запись сервиса телеметрии", "SQL postgres", "Хранит данные телеметрии устройств осуществляет только запись")
+ContainerDb(telemetry_service_read_replica_db, "База данных на чтение сервиса телеметрии", "SQL postgres", "Хранит данные телеметрии устройств осуществляет только чтение")
+
+System_Ext(email_system, "SMTP server", "")
+System_Ext(push_system, "Система отправки уведомлений", "Система отправки push уведомлений")
+
+Container_Boundary(device_service, "Сервис управления устройствами") {
+    Component(DeviceController, "DeviceController", "обработка http и ws запросов")
+    Component(CommandHandleService, "CommandHandleService", "Обработчик комманд")
+    Component(DeviceDataReciver, "DeviceDataReciver", "Приемник данных телеметрии с устройств")
+    Component(QueueLayer, "QueueLayer", "Слой для работы с брокером сообщений")
+    Component(RepositoryLayer, "RepositoryLayer", "Слой для работы с базой данных")
+    Component(InfrastructureLayer, "InfrastructureLayer", "Слой для взаимодействия с внешными инфраструктурными сервисами")
+
+    Rel(DeviceController, CommandHandleService, "Uses")
+    Rel(DeviceController, DeviceDataReciver, "Uses")
+    Rel(DeviceDataReciver, QueueLayer, "Uses")
+    Rel(CommandHandleService, RepositoryLayer, "read/write")
+}
+
+Rel(RepositoryLayer, device_service_db, "read/write")
+Rel(QueueLayer, message_broker, "pub/sub", $tags="async")
+Rel(InfrastructureLayer, service_discovery, "register/deregister")
+Rel(api_gateway, DeviceController, "HTTPS/WSS", $tags="sync/async")
+
+
+Container_Boundary(user_service, "Сервис управления пользователями") {
+    Component(UserServiceController, "UserServiceController", "обработка http запросов")
+    Component(UserServiceQueueLayer, "QueueLayer", "Слой для работы с брокером сообщений")
+    Component(UserServiceRepositoryLayer, "RepositoryLayer", "Слой для работы с базой данных")
+    Component(UserServiceInfrastructureLayer, "InfrastructureLayer", "Слой для взаимодействия с внешными инфраструктурными сервисами")
+    Component(UserServiceBusinessLayer, "BusinessLayer", "Бизнес логика")
+
+    Rel(UserServiceController, UserServiceBusinessLayer, "Uses")
+    Rel(UserServiceBusinessLayer, UserServiceQueueLayer, "Uses")
+    Rel(UserServiceBusinessLayer, UserServiceRepositoryLayer, "Uses for write read")
+}
+
+Rel(UserServiceRepositoryLayer, user_service_db, "read/write")
+Rel(UserServiceQueueLayer, message_broker, "pub/sub", $tags="async")
+Rel(UserServiceInfrastructureLayer, service_discovery, "register/deregister")
+Rel(api_gateway, UserServiceController, "HTTPS", $tags="sync/async")
+
+Container_Boundary(telemetry_service, "Сервис телеметрии") {
+    Component(TelemetryServiceController, "TelemetryServiceController", "обработка http запросов")
+    Component(TelemetryServiceQueueLayer, "QueueLayer", "Слой для работы с брокером сообщений")
+    Component(TelemetryServiceRepositoryWriteLayer, "RepositoryWiteLayer", "Слой для работы с базой данных для записи")
+    Component(TelemetryServiceRepositoryReadLayer, "RepositoryReadLayer", "Слой для работы с базой данных для чтения")
+    Component(TelemetryServiceInfrastructureLayer, "InfrastructureLayer", "Слой для взаимодействия с внешными инфраструктурными сервисами")
+    Component(TelemetryServiceBusinessLayer, "BusinessLayer", "Бизнес логика")
+
+    Rel(TelemetryServiceController, TelemetryServiceBusinessLayer, "Uses")
+    Rel(TelemetryServiceBusinessLayer, TelemetryServiceRepositoryWriteLayer, "Uses for write")
+    Rel(TelemetryServiceBusinessLayer, TelemetryServiceRepositoryReadLayer, "Uses for read")
+    Rel(TelemetryServiceBusinessLayer, TelemetryServiceQueueLayer, "sub")
+}
+
+Rel(TelemetryServiceRepositoryWriteLayer, telemetry_service_write_main_db, "write")
+Rel(TelemetryServiceRepositoryReadLayer, telemetry_service_read_replica_db, "read")
+Rel(TelemetryServiceInfrastructureLayer, service_discovery, "register/deregister")
+Rel(api_gateway, TelemetryServiceController, "HTTPS")
+Rel(TelemetryServiceQueueLayer, message_broker, "sub", $tags="async")
+
+Container_Boundary(notification_service, "Сервис нотификации") {
+    Component(NotificationServiceClient, "NotificationServiceClient", "Получение данных с других микросервисов(HTTP)")
+    Component(NotificationServiceQueueLayer, "QueueLayer", "Слой для работы с брокером сообщений")
+    Component(NotificationServiceAdapter, "NotificationAdapter", "Адаптирует отправляет сообщения во внешние сервисы")
+
+    Rel(NotificationServiceAdapter, NotificationServiceClient, "Uses")
+    Rel(NotificationServiceAdapter, NotificationServiceQueueLayer, "Uses")
+}
+
+Rel(NotificationServiceAdapter, email_system, "Uses")
+Rel(NotificationServiceAdapter, push_system, "Uses")
+Rel(NotificationServiceQueueLayer, message_broker, "sub", $tags="async")
+
+SHOW_LEGEND()
+@enduml

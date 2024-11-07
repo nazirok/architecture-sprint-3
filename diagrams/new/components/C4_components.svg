@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1150px" preserveAspectRatio="none" style="width:2934px;height:1150px;background:#FFFFFF;" version="1.1" viewBox="0 0 2934 1150" width="2934px" zoomAndPan="magnify"><defs/><g><rect fill="none" height="26.2969" id="_title" style="stroke:none;stroke-width:1.0;" width="423" x="1248.5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="413" x="1253.5" y="22.9951">Диагрмма компонентов для системы "Умный дом"</text><!--MD5=[23e3a8d52648ae459f0b135c9882c75d]
+cluster device_service--><g id="cluster_device_service"><rect fill="none" height="535" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="489" x="1677" y="186.2969"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="309" x="1767" y="203.1484">Сервис управления устройствами</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="78" x="1882.5" y="218.0605">[container]</text></g><!--MD5=[d07e253d10961917b6ba13a2e9b893a1]
+cluster user_service--><g id="cluster_user_service"><rect fill="none" height="535" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="493" x="7" y="186.2969"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="334" x="86.5" y="203.1484">Сервис управления пользователями</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="78" x="214.5" y="218.0605">[container]</text></g><!--MD5=[94349df8c324e424e3961084e829b3d5]
+cluster telemetry_service--><g id="cluster_telemetry_service"><rect fill="none" height="535" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="738" x="2190" y="186.2969"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="180" x="2469" y="203.1484">Сервис телеметрии</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="78" x="2520" y="218.0605">[container]</text></g><!--MD5=[68f36ef74b48b34a54d86c81ef0c8c1f]
+cluster notification_service--><g id="cluster_notification_service"><rect fill="none" height="328" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="523" x="750" y="393.2969"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="195" x="914" y="410.1484">Сервис нотификации</text><text fill="#444444" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="78" x="972.5" y="425.0605">[container]</text></g><!--MD5=[eb8d006de03d20b3d082ca9221e45c60]
+entity DeviceController--><g id="elem_DeviceController"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="167" x="1945.5" y="251.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="147" x="1955.5" y="276.1484">DeviceController</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="139" x="1957.5" y="291.0605">[обработка http и ws</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="66" x="1996" y="305.0293">запросов]</text></g><!--MD5=[db75d5bc5798e7b89e61b45e604c1a26]
+entity CommandHandleService--><g id="elem_CommandHandleService"><rect fill="#85BBF0" height="52.5938" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="231" x="1919.5" y="458.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="211" x="1929.5" y="483.1484">CommandHandleService</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="152" x="1959" y="498.0605">[Обработчик комманд]</text></g><!--MD5=[1cafe0c226cad719ef1233bfa9553d61]
+entity DeviceDataReciver--><g id="elem_DeviceDataReciver"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="191" x="1693.5" y="451.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="166" x="1706" y="476.1484">DeviceDataReciver</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="122" x="1726" y="491.0605">[Приемник данных</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="171" x="1703.5" y="505.0293">телеметрии с устройств]</text></g><!--MD5=[49417a6a88c201bf1623290ef787e099]
+entity QueueLayer--><g id="elem_QueueLayer"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="220" x="1696" y="638.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="107" x="1752.5" y="663.1484">QueueLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="196" x="1706" y="678.0605">[Слой для работы с брокером</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="80" x="1766" y="692.0293">сообщений]</text></g><!--MD5=[b956584062d950843f98f0d82d831de6]
+entity RepositoryLayer--><g id="elem_RepositoryLayer"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="195" x="1951.5" y="638.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="145" x="1976.5" y="663.1484">RepositoryLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="171" x="1961.5" y="678.0605">[Слой для работы с базой</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="53" x="2022.5" y="692.0293">данных]</text></g><!--MD5=[92476d303f0d5368007083611a54e4a8]
+entity InfrastructureLayer--><g id="elem_InfrastructureLayer"><rect fill="#85BBF0" height="94.5" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="212" x="1693" y="237.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="176" x="1711" y="262.1484">InfrastructureLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="188" x="1703" y="277.0605">[Слой для взаимодействия с</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="68" x="1763" y="291.0293">внешными</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="137" x="1728.5" y="304.998">инфраструктурными</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="75" x="1761.5" y="318.9668">сервисами]</text></g><!--MD5=[488e7464bbcf05bcc8f3517e7de675c8]
+entity UserServiceController--><g id="elem_UserServiceController"><rect fill="#85BBF0" height="52.5938" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="214" x="23" y="258.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="194" x="33" y="283.1484">UserServiceController</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="177" x="41.5" y="298.0605">[обработка http запросов]</text></g><!--MD5=[4f4eb44dd4cfdd31a958c573067d6234]
+entity UserServiceQueueLayer--><g id="elem_UserServiceQueueLayer"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="220" x="264" y="638.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="107" x="320.5" y="663.1484">QueueLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="196" x="274" y="678.0605">[Слой для работы с брокером</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="80" x="334" y="692.0293">сообщений]</text></g><!--MD5=[5598a74956bb4cceeb06acfdb2835b44]
+entity UserServiceRepositoryLayer--><g id="elem_UserServiceRepositoryLayer"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="195" x="32.5" y="638.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="145" x="57.5" y="663.1484">RepositoryLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="171" x="42.5" y="678.0605">[Слой для работы с базой</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="53" x="103.5" y="692.0293">данных]</text></g><!--MD5=[a8a6d4177e400dc2f3eff8c6e319fec6]
+entity UserServiceInfrastructureLayer--><g id="elem_UserServiceInfrastructureLayer"><rect fill="#85BBF0" height="94.5" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="212" x="272" y="237.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="176" x="290" y="262.1484">InfrastructureLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="188" x="282" y="277.0605">[Слой для взаимодействия с</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="68" x="342" y="291.0293">внешными</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="137" x="307.5" y="304.998">инфраструктурными</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="75" x="340.5" y="318.9668">сервисами]</text></g><!--MD5=[a3dfd33ea58e4b303b6f0a8b61e39b88]
+entity UserServiceBusinessLayer--><g id="elem_UserServiceBusinessLayer"><rect fill="#85BBF0" height="52.5938" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="148" x="56" y="458.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="128" x="66" y="483.1484">BusinessLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="105" x="77.5" y="498.0605">[Бизнес логика]</text></g><!--MD5=[368ee1d790aea8638964e5e7efad2d0c]
+entity TelemetryServiceController--><g id="elem_TelemetryServiceController"><rect fill="#85BBF0" height="52.5938" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="263" x="2453.5" y="258.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="243" x="2463.5" y="283.1484">TelemetryServiceController</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="177" x="2496.5" y="298.0605">[обработка http запросов]</text></g><!--MD5=[e8a09b0619be039e68370ae25aef5d5f]
+entity TelemetryServiceQueueLayer--><g id="elem_TelemetryServiceQueueLayer"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="220" x="2206" y="638.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="107" x="2262.5" y="663.1484">QueueLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="196" x="2216" y="678.0605">[Слой для работы с брокером</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="80" x="2276" y="692.0293">сообщений]</text></g><!--MD5=[89609729f3a48bfc2ac4059f564b0a00]
+entity TelemetryServiceRepositoryWriteLayer--><g id="elem_TelemetryServiceRepositoryWriteLayer"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="206" x="2706" y="638.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="186" x="2716" y="663.1484">RepositoryWiteLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="171" x="2721.5" y="678.0605">[Слой для работы с базой</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="130" x="2744" y="692.0293">данных для записи]</text></g><!--MD5=[674dba6302b6f48666233cff6d2589eb]
+entity TelemetryServiceRepositoryReadLayer--><g id="elem_TelemetryServiceRepositoryReadLayer"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="209" x="2461.5" y="638.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="189" x="2471.5" y="663.1484">RepositoryReadLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="171" x="2478.5" y="678.0605">[Слой для работы с базой</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="131" x="2500.5" y="692.0293">данных для чтения]</text></g><!--MD5=[02ae97b7ec3d93b0c19601d15c8c3f47]
+entity TelemetryServiceInfrastructureLayer--><g id="elem_TelemetryServiceInfrastructureLayer"><rect fill="#85BBF0" height="94.5" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="212" x="2206" y="237.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="176" x="2224" y="262.1484">InfrastructureLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="188" x="2216" y="277.0605">[Слой для взаимодействия с</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="68" x="2276" y="291.0293">внешными</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="137" x="2241.5" y="304.998">инфраструктурными</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="75" x="2274.5" y="318.9668">сервисами]</text></g><!--MD5=[e54d7b9487baacb6f5301c5ad35fbb83]
+entity TelemetryServiceBusinessLayer--><g id="elem_TelemetryServiceBusinessLayer"><rect fill="#85BBF0" height="52.5938" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="148" x="2499" y="458.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="128" x="2509" y="483.1484">BusinessLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="105" x="2520.5" y="498.0605">[Бизнес логика]</text></g><!--MD5=[efb9921be5a27d077e289e3bd5a36bac]
+entity NotificationServiceClient--><g id="elem_NotificationServiceClient"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="236" x="766" y="638.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="216" x="776" y="663.1484">NotificationServiceClient</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="185" x="789.5" y="678.0605">[Получение данных с других</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="146" x="811" y="692.0293">микросервисов(HTTP)]</text></g><!--MD5=[68a1b40c24f0b36ded27bd6df2b494ab]
+entity NotificationServiceQueueLayer--><g id="elem_NotificationServiceQueueLayer"><rect fill="#85BBF0" height="66.5625" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="220" x="1037" y="638.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="107" x="1093.5" y="663.1484">QueueLayer</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="196" x="1047" y="678.0605">[Слой для работы с брокером</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="80" x="1107" y="692.0293">сообщений]</text></g><!--MD5=[ee1c60078948b2f78291c8bb3763a057]
+entity NotificationServiceAdapter--><g id="elem_NotificationServiceAdapter"><rect fill="#85BBF0" height="80.5313" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:0.5;" width="193" x="1059.5" y="444.2969"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="172" x="1070" y="469.1484">NotificationAdapter</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="169" x="1069.5" y="484.0605">[Адаптирует отправляет</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="155" x="1076.5" y="498.0293">сообщения во внешние</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="59" x="1126.5" y="511.998">сервисы]</text></g><!--MD5=[221ac4884eeb90d5a7b9d446e35487cf]
+entity user_service_db--><g id="elem_user_service_db"><path d="M22.5,818.7969 C22.5,808.7969 130,808.7969 130,808.7969 C130,808.7969 237.5,808.7969 237.5,818.7969 L237.5,960.5 C237.5,970.5 130,970.5 130,970.5 C130,970.5 22.5,970.5 22.5,960.5 L22.5,818.7969 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M22.5,818.7969 C22.5,828.7969 130,828.7969 130,828.7969 C130,828.7969 237.5,828.7969 237.5,818.7969 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="195" x="32.5" y="847.6484">База данных сервиса</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="138" x="61" y="866.2734">пользователей</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="93" x="83.5" y="881.1855">[SQL postgres]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="128" y="897.0107"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="71.5" y="913.3076">Хранит данные</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="74" y="929.6045">пользователя:</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="42.5" y="945.9014">первональные данные,</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="58.5" y="962.1982">хэши паролей и т.д</text></g><!--MD5=[145571b84f85f97fcd276a68dd6ab1bc]
+entity device_service_db--><g id="elem_device_service_db"><path d="M1940.5,817.7969 C1940.5,807.7969 2049,807.7969 2049,807.7969 C2049,807.7969 2157.5,807.7969 2157.5,817.7969 L2157.5,961.8281 C2157.5,971.8281 2049,971.8281 2049,971.8281 C2049,971.8281 1940.5,971.8281 1940.5,961.8281 L1940.5,817.7969 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M1940.5,817.7969 C1940.5,827.7969 2049,827.7969 2049,827.7969 C2049,827.7969 2157.5,827.7969 2157.5,817.7969 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="195" x="1951.5" y="846.6484">База данных сервиса</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="107" x="1992.5" y="865.2734">управления</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="91" x="2003.5" y="883.8984">устройств</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="93" x="2002.5" y="898.8105">[SQL postgres]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2047" y="914.6357"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="1950.5" y="930.9326">Хранит данные устройств,</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="1998.5" y="947.2295">данные дома</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="1992.5" y="963.5264">пользователей</text></g><!--MD5=[76642c686924d2234c32dd0968779847]
+entity api_gateway--><g id="elem_api_gateway"><rect fill="#438DD5" height="80.5313" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="207" x="1925.5" y="44.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="57" x="2000.5" y="69.1484">Шлюз</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="183" x="1935.5" y="84.0605">[Отвечает за балансировку</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="163" x="1945.5" y="98.0293">запросов, авторизацию,</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="146" x="1956" y="111.998">управление сессиями]</text></g><!--MD5=[c4b9eab5b9d3041c22c4a07cace1f6fa]
+entity message_broker--><g id="elem_message_broker"><rect fill="#438DD5" height="117.7813" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="214" x="1366" y="830.7969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="178" x="1384" y="855.6484">Брокер сообщений</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="77" x="1434.5" y="870.5605">[java, Kafka]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="1471" y="886.3857"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="1387.5" y="902.6826">центральный элемент</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="1420" y="918.9795">асинхронного</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="1376" y="935.2764">взаимодействия сервисов</text></g><!--MD5=[eab494939448f4938d7475d9e08c939a]
+entity service_discovery--><g id="elem_service_discovery"><rect fill="#438DD5" height="117.7813" rx="2.5" ry="2.5" style="stroke:#3C7FC0;stroke-width:0.5;" width="218" x="516" y="425.7969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="547" y="450.6484">Service discovery</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="103" x="573.5" y="465.5605">[Golang, consul]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="623" y="481.3857"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="526" y="497.6826">Отвечает за регистрацию</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="173" x="536.5" y="513.9795">слубж и выдачу данных</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="560" y="530.2764">служб по запросу</text></g><!--MD5=[397cd7a23d15983a2195d6f6519f9096]
+entity telemetry_service_write_main_db--><g id="elem_telemetry_service_write_main_db"><path d="M2711.5,809.7969 C2711.5,799.7969 2809,799.7969 2809,799.7969 C2809,799.7969 2906.5,799.7969 2906.5,809.7969 L2906.5,970.125 C2906.5,980.125 2809,980.125 2809,980.125 C2809,980.125 2711.5,980.125 2711.5,970.125 L2711.5,809.7969 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M2711.5,809.7969 C2711.5,819.7969 2809,819.7969 2809,819.7969 C2809,819.7969 2906.5,819.7969 2906.5,809.7969 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="143" x="2734.5" y="838.6484">База данных на</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="140" x="2736" y="857.2734">запись сервиса</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="109" x="2754.5" y="875.8984">телеметрии</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="93" x="2762.5" y="890.8105">[SQL postgres]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2807" y="906.6357"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="2750.5" y="922.9326">Хранит данные</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="2721.5" y="939.2295">телеметрии устройств</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="2725.5" y="955.5264">осуществляет только</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="2784" y="971.8232">запись</text></g><!--MD5=[ae559913dd9dae73a8f8caa2efbcead1]
+entity telemetry_service_read_replica_db--><g id="elem_telemetry_service_read_replica_db"><path d="M2468.5,809.7969 C2468.5,799.7969 2566,799.7969 2566,799.7969 C2566,799.7969 2663.5,799.7969 2663.5,809.7969 L2663.5,970.125 C2663.5,980.125 2566,980.125 2566,980.125 C2566,980.125 2468.5,980.125 2468.5,970.125 L2468.5,809.7969 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:0.5;"/><path d="M2468.5,809.7969 C2468.5,819.7969 2566,819.7969 2566,819.7969 C2566,819.7969 2663.5,819.7969 2663.5,809.7969 " fill="none" style="stroke:#3C7FC0;stroke-width:0.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="143" x="2491.5" y="838.6484">База данных на</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="143" x="2491.5" y="857.2734">чтение сервиса</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="109" x="2511.5" y="875.8984">телеметрии</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="93" x="2519.5" y="890.8105">[SQL postgres]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2564" y="906.6357"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="2507.5" y="922.9326">Хранит данные</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="2478.5" y="939.2295">телеметрии устройств</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="2482.5" y="955.5264">осуществляет только</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="2539.5" y="971.8232">чтение</text></g><!--MD5=[088d2f8db2a642851fdacc5e01750e2a]
+entity email_system--><g id="elem_email_system"><rect fill="#999999" height="38.625" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="134" x="1527" y="652.2969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="114" x="1537" y="677.1484">SMTP server</text></g><!--MD5=[d9c16d239d966a163fe218f55606603b]
+entity push_system--><g id="elem_push_system"><rect fill="#999999" height="106.1406" rx="2.5" ry="2.5" style="stroke:#8A8A8A;stroke-width:0.5;" width="199" x="1292.5" y="618.7969"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="166" x="1306" y="643.6484">Система отправки</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="124" x="1330" y="662.2734">уведомлений</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="1390" y="679.042"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="1302.5" y="695.3389">Система отправки push</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="1343" y="711.6357">уведомлений</text></g><!--MD5=[64e3451df0af0b4f79093dc4be7ee2e5]
+link DeviceController to CommandHandleService--><g id="link_DeviceController_CommandHandleService"><path d="M2029.99,318.4969 C2031.09,354.6969 2032.85,412.7869 2033.96,449.5869 " fill="none" id="DeviceController-to-CommandHandleService" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2034.22,457.9969,2036.9754,449.9094,2030.9782,450.0918,2034.22,457.9969" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="2032" y="374.4355">Uses</text></g><!--MD5=[44f5b9e53622f26c1f3eeab66900922d]
+link DeviceController to DeviceDataReciver--><g id="link_DeviceController_DeviceDataReciver"><path d="M1986.23,318.4169 C1961.38,337.5769 1929.63,362.4569 1902,385.2969 C1878.36,404.8369 1852.53,427.2669 1831.55,445.7769 " fill="none" id="DeviceController-to-DeviceDataReciver" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1825.48,451.1369,1833.4619,448.089,1829.4897,443.5922,1825.48,451.1369" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="1930" y="374.4355">Uses</text></g><!--MD5=[04d81aa1569f0e6559d1ef58c3cc835b]
+link DeviceDataReciver to QueueLayer--><g id="link_DeviceDataReciver_QueueLayer"><path d="M1792,518.4469 C1794.86,549.5269 1799.16,596.3969 1802.25,629.9369 " fill="none" id="DeviceDataReciver-to-QueueLayer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1803,638.1669,1805.2448,629.923,1799.2706,630.4798,1803,638.1669" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="1799" y="585.9355">Uses</text></g><!--MD5=[78eb5adbe59b732a10b22ea54e5e5625]
+link CommandHandleService to RepositoryLayer--><g id="link_CommandHandleService_RepositoryLayer"><path d="M2036.95,511.5169 C2039.26,542.1269 2043.16,593.6269 2045.89,629.7569 " fill="none" id="CommandHandleService-to-RepositoryLayer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2046.53,638.1269,2048.9076,629.9203,2042.9253,630.3805,2046.53,638.1269" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="74" x="2043" y="585.9355">read/write</text></g><!--MD5=[400acdcb413ed35467f450d8904f12bb]
+link RepositoryLayer to device_service_db--><g id="link_RepositoryLayer_device_service_db"><path d="M2049,705.6069 C2049,730.5169 2049,766.0269 2049,799.1669 " fill="none" id="RepositoryLayer-to-device_service_db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2049,807.5369,2052,799.5369,2046,799.5369,2049,807.5369" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="74" x="2050" y="766.9355">read/write</text></g><!--MD5=[0ae10a7670f09dd965b0e76d27ce6d26]
+link QueueLayer to message_broker--><g id="link_QueueLayer_message_broker"><path d="M1755.79,705.3669 C1706.63,737.2569 1630.45,786.6669 1569.54,826.1769 " fill="none" id="QueueLayer-to-message_broker" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="1562.57,830.6969,1570.9166,828.871,1567.658,823.8331,1562.57,830.6969" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="57" x="1680" y="766.9355">pub/sub</text></g><!--MD5=[b8f79af84f2d1a0b58301e884aba9534]
+link InfrastructureLayer to service_discovery--><g id="link_InfrastructureLayer_service_discovery"><path d="M1692.58,288.2969 C1461.15,294.9469 919.29,317.4869 750,385.2969 C729.1,393.6669 708.84,406.6969 690.93,420.5569 " fill="none" id="InfrastructureLayer-to-service_discovery" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="684.44,425.6969,692.5728,423.0782,688.8456,418.3763,684.44,425.6969" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="136" x="815" y="374.4355">register/deregister</text></g><!--MD5=[864a69cfc73a327768b15c0bd5399f3f]
+link api_gateway to DeviceController--><g id="link_api_gateway_DeviceController"><path d="M2029,125.3869 C2029,159.4069 2029,208.2869 2029,242.7269 " fill="none" id="api_gateway-to-DeviceController" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:1.0,3.0;"/><polygon fill="#666666" points="2029,251.1569,2032,243.1569,2026,243.1569,2029,251.1569" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="2030" y="167.4355">HTTPS/WSS</text></g><!--MD5=[b71b79f756cf7bf886805558ad0b311e]
+link UserServiceController to UserServiceBusinessLayer--><g id="link_UserServiceController_UserServiceBusinessLayer"><path d="M130,311.6869 C130,347.0569 130,410.5769 130,449.7669 " fill="none" id="UserServiceController-to-UserServiceBusinessLayer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="130,458.2169,133,450.2169,127,450.2169,130,458.2169" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="131" y="374.4355">Uses</text></g><!--MD5=[45b4d1799c9570308fc6a5e8a67989b2]
+link UserServiceBusinessLayer to UserServiceQueueLayer--><g id="link_UserServiceBusinessLayer_UserServiceQueueLayer"><path d="M179.62,511.4869 C209.08,527.6969 246.51,550.0169 277,573.7969 C299.27,591.1669 321.72,613.2569 339.41,631.9769 " fill="none" id="UserServiceBusinessLayer-to-UserServiceQueueLayer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="345.22,638.1769,341.9519,630.2826,337.567,634.3781,345.22,638.1769" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="296" y="585.9355">Uses</text></g><!--MD5=[3b435097a9dab94f7d3fe6a14ace9239]
+link UserServiceBusinessLayer to UserServiceRepositoryLayer--><g id="link_UserServiceBusinessLayer_UserServiceRepositoryLayer"><path d="M130,511.5169 C130,542.1269 130,593.6269 130,629.7569 " fill="none" id="UserServiceBusinessLayer-to-UserServiceRepositoryLayer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="130,638.1269,133,630.1269,127,630.1269,130,638.1269" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="137" x="131" y="585.9355">Uses for write read</text></g><!--MD5=[79c6bc99eb2c3d4ba245f08c73d8c2a1]
+link UserServiceRepositoryLayer to user_service_db--><g id="link_UserServiceRepositoryLayer_user_service_db"><path d="M130,705.6069 C130,730.8369 130,766.9569 130,800.4569 " fill="none" id="UserServiceRepositoryLayer-to-user_service_db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="130,808.4569,133,800.4569,127,800.4569,130,808.4569" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="74" x="131" y="766.9355">read/write</text></g><!--MD5=[b4577fe07a81323cf95ed3e05b29eac7]
+link UserServiceQueueLayer to message_broker--><g id="link_UserServiceQueueLayer_message_broker"><path d="M484.15,694.4469 C693.07,735.5069 1144.97,824.3269 1357.76,866.1469 " fill="none" id="UserServiceQueueLayer-to-message_broker" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="1365.85,867.7369,1358.578,863.2516,1357.4219,869.1392,1365.85,867.7369" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="57" x="859" y="766.9355">pub/sub</text></g><!--MD5=[7d05fdfe3faef625f145ad727e653a37]
+link UserServiceInfrastructureLayer to service_discovery--><g id="link_UserServiceInfrastructureLayer_service_discovery"><path d="M436.22,332.4669 C468.98,358.7269 510.35,391.8869 546,420.4669 " fill="none" id="UserServiceInfrastructureLayer-to-service_discovery" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="552.58,425.7469,548.2112,418.4043,544.4604,423.0874,552.58,425.7469" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="136" x="488" y="374.4355">register/deregister</text></g><!--MD5=[4120d7da0319af076ba63896ce8ef344]
+link api_gateway to UserServiceController--><g id="link_api_gateway_UserServiceController"><path d="M1925.43,87.3269 C1569.38,93.1369 409.06,116.6269 254,178.2969 C215.02,193.7969 179.56,226.7869 156.64,251.7769 " fill="none" id="api_gateway-to-UserServiceController" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:1.0,3.0;"/><polygon fill="#666666" points="151.09,257.9369,158.6695,253.9934,154.2076,249.982,151.09,257.9369" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="44" x="350" y="167.4355">HTTPS</text></g><!--MD5=[d851fc2c2e62f9f75728c36d31e73a41]
+link TelemetryServiceController to TelemetryServiceBusinessLayer--><g id="link_TelemetryServiceController_TelemetryServiceBusinessLayer"><path d="M2583.43,311.6869 C2581.29,347.0569 2577.44,410.5769 2575.06,449.7669 " fill="none" id="TelemetryServiceController-to-TelemetryServiceBusinessLayer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2574.55,458.2169,2578.0302,450.4138,2572.0412,450.0495,2574.55,458.2169" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="2581" y="374.4355">Uses</text></g><!--MD5=[3e3597c35844afc605a4c9e3a57c8834]
+link TelemetryServiceBusinessLayer to TelemetryServiceRepositoryWriteLayer--><g id="link_TelemetryServiceBusinessLayer_TelemetryServiceRepositoryWriteLayer"><path d="M2605.81,511.5169 C2646.1,543.0969 2714.73,596.9069 2760.96,633.1369 " fill="none" id="TelemetryServiceBusinessLayer-to-TelemetryServiceRepositoryWriteLayer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2767.33,638.1269,2762.8878,630.8285,2759.1842,635.549,2767.33,638.1269" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="100" x="2699" y="585.9355">Uses for write</text></g><!--MD5=[68e5e3f66caf4f745e694dbc1ad734bf]
+link TelemetryServiceBusinessLayer to TelemetryServiceRepositoryReadLayer--><g id="link_TelemetryServiceBusinessLayer_TelemetryServiceRepositoryReadLayer"><path d="M2572.03,511.5169 C2570.87,542.1269 2568.92,593.6269 2567.55,629.7569 " fill="none" id="TelemetryServiceBusinessLayer-to-TelemetryServiceRepositoryReadLayer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2567.24,638.1269,2570.5377,630.2449,2564.5419,630.0201,2567.24,638.1269" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="96" x="2570" y="585.9355">Uses for read</text></g><!--MD5=[544a2f6e9257a33688a1c835f16889bb]
+link TelemetryServiceBusinessLayer to TelemetryServiceQueueLayer--><g id="link_TelemetryServiceBusinessLayer_TelemetryServiceQueueLayer"><path d="M2537.54,511.3269 C2493.65,542.9169 2418.57,596.9669 2368.13,633.2769 " fill="none" id="TelemetryServiceBusinessLayer-to-TelemetryServiceQueueLayer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2361.49,638.0569,2369.7371,635.8242,2366.2355,630.952,2361.49,638.0569" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="26" x="2445" y="585.9355">sub</text></g><!--MD5=[4a2d4bf0a652c5ffddd352711d6980cf]
+link TelemetryServiceRepositoryWriteLayer to telemetry_service_write_main_db--><g id="link_TelemetryServiceRepositoryWriteLayer_telemetry_service_write_main_db"><path d="M2809,705.6069 C2809,728.5669 2809,760.5469 2809,791.3569 " fill="none" id="TelemetryServiceRepositoryWriteLayer-to-telemetry_service_write_main_db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2809,799.5869,2812,791.5869,2806,791.5869,2809,799.5869" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="37" x="2810" y="766.9355">write</text></g><!--MD5=[5885b8f88cc5d14da3587193290020e7]
+link TelemetryServiceRepositoryReadLayer to telemetry_service_read_replica_db--><g id="link_TelemetryServiceRepositoryReadLayer_telemetry_service_read_replica_db"><path d="M2566,705.6069 C2566,728.5669 2566,760.5469 2566,791.3569 " fill="none" id="TelemetryServiceRepositoryReadLayer-to-telemetry_service_read_replica_db" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2566,799.5869,2569,791.5869,2563,791.5869,2566,799.5869" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="33" x="2567" y="766.9355">read</text></g><!--MD5=[0651dd06517ef62e5c8f37d60b26b65a]
+link TelemetryServiceInfrastructureLayer to service_discovery--><g id="link_TelemetryServiceInfrastructureLayer_service_discovery"><path d="M2254.19,332.4169 C2228.71,350.0969 2197.45,368.1569 2166,377.2969 C2128.23,388.2669 787.13,372.3069 750,385.2969 C728.17,392.9369 707.24,406.1069 688.97,420.3869 " fill="none" id="TelemetryServiceInfrastructureLayer-to-service_discovery" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="682.37,425.6869,690.4858,423.0161,686.7285,418.3382,682.37,425.6869" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="136" x="2201" y="374.4355">register/deregister</text></g><!--MD5=[bc0af5baf90b1981dcb41b8b7d79a6b1]
+link api_gateway to TelemetryServiceController--><g id="link_api_gateway_TelemetryServiceController"><path d="M2132.9,97.9569 C2217.34,110.4969 2338.07,134.5869 2436,178.2969 C2478.52,197.2769 2521.3,229.2069 2550.04,252.9769 " fill="none" id="api_gateway-to-TelemetryServiceController" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2556.32,258.2269,2552.1016,250.7969,2548.2563,255.4027,2556.32,258.2269" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="44" x="2416" y="167.4355">HTTPS</text></g><!--MD5=[fa1f45490aa8a55dd5d9fdf313c65061]
+link TelemetryServiceQueueLayer to message_broker--><g id="link_TelemetryServiceQueueLayer_message_broker"><path d="M2266.05,705.3669 C2230.39,727.0569 2180.53,754.3269 2133,769.7969 C2043.35,798.9769 2015.94,783.9769 1923,799.7969 C1808.76,819.2369 1679.01,845.3369 1588.28,864.2369 " fill="none" id="TelemetryServiceQueueLayer-to-message_broker" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="1580.45,865.8669,1588.8933,867.1746,1587.6713,861.3004,1580.45,865.8669" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="26" x="2170" y="766.9355">sub</text></g><!--MD5=[b30dbf4a4b0ee355a4792c61cf2596be]
+link NotificationServiceAdapter to NotificationServiceClient--><g id="link_NotificationServiceAdapter_NotificationServiceClient"><path d="M1097.65,525.4869 C1050.49,557.5669 984.58,602.3869 938.49,633.7369 " fill="none" id="NotificationServiceAdapter-to-NotificationServiceClient" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="931.83,638.2669,940.1319,636.2472,936.7568,631.2865,931.83,638.2669" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="1021" y="585.9355">Uses</text></g><!--MD5=[bdc0e2caf4f5478ed7fe0e72a626b9e7]
+link NotificationServiceAdapter to NotificationServiceQueueLayer--><g id="link_NotificationServiceAdapter_NotificationServiceQueueLayer"><path d="M1154.07,525.4869 C1152.57,556.3769 1150.49,599.0969 1148.97,630.2169 " fill="none" id="NotificationServiceAdapter-to-NotificationServiceQueueLayer" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1148.58,638.2669,1151.9618,630.4206,1145.9687,630.1317,1148.58,638.2669" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="1152" y="585.9355">Uses</text></g><!--MD5=[bf446c1e85d1e70eb8b31799337ff810]
+link NotificationServiceAdapter to email_system--><g id="link_NotificationServiceAdapter_email_system"><path d="M1252.82,516.7469 C1324.93,541.1169 1425.01,577.7369 1509,618.7969 C1526.25,627.2269 1544.52,638.1269 1559.69,647.7669 " fill="none" id="NotificationServiceAdapter-to-email_system" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1566.42,652.0869,1561.3048,645.2433,1558.0662,650.2942,1566.42,652.0869" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="1434" y="585.9355">Uses</text></g><!--MD5=[0da2c352ed4878352becdf3c38bf1818]
+link NotificationServiceAdapter to push_system--><g id="link_NotificationServiceAdapter_push_system"><path d="M1206.63,525.4869 C1239.27,551.0669 1282.25,584.7669 1318.61,613.2669 " fill="none" id="NotificationServiceAdapter-to-push_system" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1325.32,618.5269,1320.8778,611.2285,1317.1742,615.949,1325.32,618.5269" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="1282" y="585.9355">Uses</text></g><!--MD5=[cb89416ded9df779a2ce0383cab9f7ba]
+link NotificationServiceQueueLayer to message_broker--><g id="link_NotificationServiceQueueLayer_message_broker"><path d="M1196.16,705.3669 C1244.29,737.2569 1318.86,786.6669 1378.49,826.1769 " fill="none" id="NotificationServiceQueueLayer-to-message_broker" style="stroke:#666666;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#666666" points="1385.31,830.6969,1380.2937,823.7805,1376.9828,828.7843,1385.31,830.6969" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="26" x="1291" y="766.9355">sub</text></g><rect fill="none" height="130.0781" id="_legend" rx="7.5" ry="7.5" style="stroke:none;stroke-width:1.0;" width="174" x="2738" y="1004.125"/><rect height="16.2969" style="stroke:none;stroke-width:1.0;fill:none;" width="162" x="2744" y="1012.125"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="2744" y="1025.1201">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2808" y="1025.1201"> </text><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="162" x="2744" y="1028.4219"/><text fill="#3C7FC0" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="2748" y="1041.417">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2756" y="1041.417"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="2764" y="1041.417">container</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2833" y="1041.417"> </text><rect fill="#85BBF0" height="16.2969" style="stroke:none;stroke-width:1.0;" width="162" x="2744" y="1044.7188"/><text fill="#78A8D8" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="2748" y="1057.7139">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2756" y="1057.7139"> </text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="2764" y="1057.7139">component</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2848" y="1057.7139"> </text><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="162" x="2744" y="1061.0156"/><text fill="#8A8A8A" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="2748" y="1074.0107">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2756" y="1074.0107"> </text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="2764" y="1074.0107">external system</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2877" y="1074.0107"> </text><rect height="16.2969" style="stroke:none;stroke-width:1.0;fill:none;" width="162" x="2744" y="1077.3125"/><text fill="#444444" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="2748" y="1090.3076">▯</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2756" y="1090.3076"> </text><text fill="#444444" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="134" x="2764" y="1090.3076">container boundary</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2902" y="1090.3076"> </text><text fill="#666666" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="2748" y="1106.6045">─</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2756" y="1106.6045"> </text><text fill="#666666" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="2764" y="1106.6045">async</text><text fill="#666666" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="43" x="2808" y="1107.5479">(dashed)</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2851" y="1106.6045"> </text><text fill="#666666" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="2748" y="1122.9014">─</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2756" y="1122.9014"> </text><text fill="#666666" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="2764" y="1122.9014">sync/async</text><text fill="#666666" font-family="sans-serif" font-size="10" lengthAdjust="spacing" textLength="40" x="2845" y="1123.8447">(dotted)</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="2885" y="1122.9014"> </text><line style="stroke:#00000000;stroke-width:1.0;" x1="2744" x2="2906" y1="1012.125" y2="1012.125"/><line style="stroke:#00000000;stroke-width:1.0;" x1="2744" x2="2906" y1="1028.4219" y2="1028.4219"/><line style="stroke:#00000000;stroke-width:1.0;" x1="2744" x2="2906" y1="1044.7188" y2="1044.7188"/><line style="stroke:#00000000;stroke-width:1.0;" x1="2744" x2="2906" y1="1061.0156" y2="1061.0156"/><line style="stroke:#00000000;stroke-width:1.0;" x1="2744" x2="2906" y1="1077.3125" y2="1077.3125"/><line style="stroke:#00000000;stroke-width:1.0;" x1="2744" x2="2906" y1="1093.6094" y2="1093.6094"/><line style="stroke:#00000000;stroke-width:1.0;" x1="2744" x2="2906" y1="1109.9063" y2="1109.9063"/><line style="stroke:#00000000;stroke-width:1.0;" x1="2744" x2="2906" y1="1126.2031" y2="1126.2031"/><line style="stroke:#00000000;stroke-width:1.0;" x1="2744" x2="2744" y1="1012.125" y2="1126.2031"/><line style="stroke:#00000000;stroke-width:1.0;" x1="2906" x2="2906" y1="1012.125" y2="1126.2031"/><!--MD5=[f5317bdd5d57f409086af1e179064613]
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+AddRelTag("async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DashedLine())
+AddRelTag("sync/async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DottedLine())
+
+
+LAYOUT_WITH_LEGEND()
+title Диагрмма компонентов для системы "Умный дом"
+
+ContainerDb(user_service_db, "База данных сервиса пользователей", "SQL postgres", "Хранит данные пользователя: первональные данные, хэши паролей и т.д")
+ContainerDb(device_service_db, "База данных сервиса управления устройств", "SQL postgres", "Хранит данные устройств, данные дома пользователей")
+Container(api_gateway, "Шлюз", "Отвечает за балансировку запросов, авторизацию, управление сессиями", $tags="backendContainer")
+Container(message_broker, "Брокер сообщений", "java, Kafka", "центральный элемент асинхронного взаимодействия сервисов")
+Container(service_discovery, "Service discovery", "Golang, consul", "Отвечает за регистрацию слубж и выдачу данных служб по запросу")
+ContainerDb(telemetry_service_write_main_db, "База данных на запись сервиса телеметрии", "SQL postgres", "Хранит данные телеметрии устройств осуществляет только запись")
+ContainerDb(telemetry_service_read_replica_db, "База данных на чтение сервиса телеметрии", "SQL postgres", "Хранит данные телеметрии устройств осуществляет только чтение")
+
+System_Ext(email_system, "SMTP server", "")
+System_Ext(push_system, "Система отправки уведомлений", "Система отправки push уведомлений")
+
+Container_Boundary(device_service, "Сервис управления устройствами") {
+    Component(DeviceController, "DeviceController", "обработка http и ws запросов")
+    Component(CommandHandleService, "CommandHandleService", "Обработчик комманд")
+    Component(DeviceDataReciver, "DeviceDataReciver", "Приемник данных телеметрии с устройств")
+    Component(QueueLayer, "QueueLayer", "Слой для работы с брокером сообщений")
+    Component(RepositoryLayer, "RepositoryLayer", "Слой для работы с базой данных")
+    Component(InfrastructureLayer, "InfrastructureLayer", "Слой для взаимодействия с внешными инфраструктурными сервисами")
+
+    Rel(DeviceController, CommandHandleService, "Uses")
+    Rel(DeviceController, DeviceDataReciver, "Uses")
+    Rel(DeviceDataReciver, QueueLayer, "Uses")
+    Rel(CommandHandleService, RepositoryLayer, "read/write")
+}
+
+Rel(RepositoryLayer, device_service_db, "read/write")
+Rel(QueueLayer, message_broker, "pub/sub", $tags="async")
+Rel(InfrastructureLayer, service_discovery, "register/deregister")
+Rel(api_gateway, DeviceController, "HTTPS/WSS", $tags="sync/async")
+
+
+Container_Boundary(user_service, "Сервис управления пользователями") {
+    Component(UserServiceController, "UserServiceController", "обработка http запросов")
+    Component(UserServiceQueueLayer, "QueueLayer", "Слой для работы с брокером сообщений")
+    Component(UserServiceRepositoryLayer, "RepositoryLayer", "Слой для работы с базой данных")
+    Component(UserServiceInfrastructureLayer, "InfrastructureLayer", "Слой для взаимодействия с внешными инфраструктурными сервисами")
+    Component(UserServiceBusinessLayer, "BusinessLayer", "Бизнес логика")
+
+    Rel(UserServiceController, UserServiceBusinessLayer, "Uses")
+    Rel(UserServiceBusinessLayer, UserServiceQueueLayer, "Uses")
+    Rel(UserServiceBusinessLayer, UserServiceRepositoryLayer, "Uses for write read")
+}
+
+Rel(UserServiceRepositoryLayer, user_service_db, "read/write")
+Rel(UserServiceQueueLayer, message_broker, "pub/sub", $tags="async")
+Rel(UserServiceInfrastructureLayer, service_discovery, "register/deregister")
+Rel(api_gateway, UserServiceController, "HTTPS", $tags="sync/async")
+
+Container_Boundary(telemetry_service, "Сервис телеметрии") {
+    Component(TelemetryServiceController, "TelemetryServiceController", "обработка http запросов")
+    Component(TelemetryServiceQueueLayer, "QueueLayer", "Слой для работы с брокером сообщений")
+    Component(TelemetryServiceRepositoryWriteLayer, "RepositoryWiteLayer", "Слой для работы с базой данных для записи")
+    Component(TelemetryServiceRepositoryReadLayer, "RepositoryReadLayer", "Слой для работы с базой данных для чтения")
+    Component(TelemetryServiceInfrastructureLayer, "InfrastructureLayer", "Слой для взаимодействия с внешными инфраструктурными сервисами")
+    Component(TelemetryServiceBusinessLayer, "BusinessLayer", "Бизнес логика")
+
+    Rel(TelemetryServiceController, TelemetryServiceBusinessLayer, "Uses")
+    Rel(TelemetryServiceBusinessLayer, TelemetryServiceRepositoryWriteLayer, "Uses for write")
+    Rel(TelemetryServiceBusinessLayer, TelemetryServiceRepositoryReadLayer, "Uses for read")
+    Rel(TelemetryServiceBusinessLayer, TelemetryServiceQueueLayer, "sub")
+}
+
+Rel(TelemetryServiceRepositoryWriteLayer, telemetry_service_write_main_db, "write")
+Rel(TelemetryServiceRepositoryReadLayer, telemetry_service_read_replica_db, "read")
+Rel(TelemetryServiceInfrastructureLayer, service_discovery, "register/deregister")
+Rel(api_gateway, TelemetryServiceController, "HTTPS")
+Rel(TelemetryServiceQueueLayer, message_broker, "sub", $tags="async")
+
+Container_Boundary(notification_service, "Сервис нотификации") {
+    Component(NotificationServiceClient, "NotificationServiceClient", "Получение данных с других микросервисов(HTTP)")
+    Component(NotificationServiceQueueLayer, "QueueLayer", "Слой для работы с брокером сообщений")
+    Component(NotificationServiceAdapter, "NotificationAdapter", "Адаптирует отправляет сообщения во внешние сервисы")
+
+    Rel(NotificationServiceAdapter, NotificationServiceClient, "Uses")
+    Rel(NotificationServiceAdapter, NotificationServiceQueueLayer, "Uses")
+}
+
+Rel(NotificationServiceAdapter, email_system, "Uses")
+Rel(NotificationServiceAdapter, push_system, "Uses")
+Rel(NotificationServiceQueueLayer, message_broker, "sub", $tags="async")
+
+SHOW_LEGEND()
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendFontColor #FFFFFF
+skinparam LegendBackgroundColor transparent
+skinparam LegendBorderColor transparent
+
+skinparam rectangle<<legendArea>> {
+    backgroundcolor transparent
+    bordercolor transparent
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+}
+
+skinparam database {
+    StereotypeFontSize 12
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+}
+
+skinparam participant {
+    StereotypeFontSize 12
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam person {
+    StereotypeFontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    style awesome
+}
+
+
+skinparam rectangle<<boundary>> {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    BorderStyle dashed
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+skinparam rectangle<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam database<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam queue<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam person<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam actor<<boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam participant<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam sequencebox<<boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam package<<boundary>>StereotypeFontColor transparent
+skinparam rectangle<<boundary>>StereotypeFontColor transparent
+
+    
+skinparam rectangle<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam database<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam queue<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam person<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam actor<<enterprise_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam participant<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam sequencebox<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam package<<enterprise_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<enterprise_boundary>>StereotypeFontColor transparent
+
+
+    
+skinparam rectangle<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam database<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam queue<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam person<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam actor<<system_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam participant<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam sequencebox<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam package<<system_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<system_boundary>>StereotypeFontColor transparent
+
+
+    
+skinparam rectangle<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam database<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam queue<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam person<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam actor<<container_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam participant<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam sequencebox<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam package<<container_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<container_boundary>>StereotypeFontColor transparent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam participant<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam sequencebox<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam participant<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam sequencebox<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam participant<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam sequencebox<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam participant<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam sequencebox<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+    
+skinparam rectangle<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam database<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam queue<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam person<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam actor<<system_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam participant<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam sequencebox<<system_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam package<<system_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<system_boundary>>StereotypeFontColor transparent
+
+
+    
+skinparam rectangle<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam database<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam queue<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam person<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam actor<<enterprise_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam participant<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam sequencebox<<enterprise_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam package<<enterprise_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<enterprise_boundary>>StereotypeFontColor transparent
+
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+sprite $robot [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000005BFFFFFFFFFFFFFFFFFFFFFE9100000000000
+0000000000AFFFFFFFFFFFFFFFFFFFFFFFFFE30000000000
+0000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFE1000000000
+000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000000000
+000000004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000699405FFFFFFC427FFFFFFFFFC427FFFFFFE009982000
+008FFF705FFFFFE10006FFFFFFFE00007FFFFFE00FFFF100
+00CFFF705FFFFFA00001FFFFFFF900002FFFFFE00FFFF500
+00DFFF705FFFFFB00002FFFFFFFA00003FFFFFE00FFFF500
+00DFFF705FFFFFF4000AFFFFFFFF3000BFFFFFE00FFFF500
+00DFFF705FFFFFFFA8DFFFFFFFFFFA8DFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00DFFF705FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE00FFFF500
+00CFFF705FFFFFF87777777777777777CFFFFFE00FFFF500
+008FFF705FFFFFF100000000000000009FFFFFE00FFFF100
+000699405FFFFFF76666666666666666CFFFFFE009982000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFE000000000
+000000004FFFFFFFFFFFFFFFFFFFFFFFFFFFFFC000000000
+000000000EFFFFFFFFFFFFFFFFFFFFFFFFFFFF7000000000
+0000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFD0000000000
+00000000004CFFFFFFFFFFFFFFFFFFFFFFFF910000000000
+000000000000011111111111111111111110000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $robot2 [48x48/16] {
+000000000000000088888888888888880000000000000000
+000000000000000AFFFFFFFFFFFFFFFFA000000000000000
+00000000000000CFFFFFFFFFFFFFFFFFFC00000000000000
+00000000000004EFFFFFFFFFFFFFFFFFFE40000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFFA0000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000888FFFFFFFFFFFFFFFFFFFF88800000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000008FF8FFFFFFFFFFFFFFFFFFFF8FF80000000000
+00000000000888FFFFFFFFFFFFFFFFFFFF88800000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000008FFFFFFFFFFFFFFFFFFFF80000000000000
+00000000000004CFFFFFFFFFFFFFFFFFFC40000000000000
+000000488888848CFFFFFFFFFFFFFFFFC848888884000000
+00000CFFFFFFFFC888888888888888888CFFFFFFFFC00000
+00008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF80000
+0000CFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFC0000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0008FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF8000
+0000CFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFC0000
+00008FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF80000
+00000CFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFC00000
+000000488887578888888888888888888864688884000000
+000000000000000000000000000000000000000000000000
+}
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam participant<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam sequencebox<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam participant<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam sequencebox<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam participant<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam sequencebox<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam participant<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam sequencebox<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+    
+skinparam rectangle<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam database<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam queue<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam person<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam actor<<container_boundary>> {
+    FontColor transparent
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam participant<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam sequencebox<<container_boundary>> {
+    FontColor #444444
+    BackgroundColor transparent
+    BorderColor #444444
+    BorderStyle dashed
+}
+skinparam package<<container_boundary>>StereotypeFontColor transparent
+skinparam rectangle<<container_boundary>>StereotypeFontColor transparent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam database<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam queue<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam person<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam actor<<component>> {
+    StereotypeFontColor #85BBF0
+    FontColor #85BBF0
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam participant<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam sequencebox<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+skinparam rectangle<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam database<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam queue<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam person<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam actor<<external_component>> {
+    StereotypeFontColor #CCCCCC
+    FontColor #CCCCCC
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam participant<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam sequencebox<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam arrow<<async>> {
+    Color 666666;text:666666;line.dashed
+}
+skinparam arrow<<sync/async>> {
+    Color 666666;text:666666;line.dotted
+}
+
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#08427B> person |
+|<#1168BD> system |
+|<#438DD5> container |
+|<#85BBF0> component |
+|<#686868> external person |
+|<#999999> external system |
+|<#B3B3B3> external container |
+|<#CCCCCC> external component |
+endlegend
+title Диагрмма компонентов для системы "Умный дом"
+
+  database "== База данных сервиса пользователей\n//<size:12>[SQL postgres]</size>//\n\nХранит данные пользователя: первональные данные, хэши паролей и т.д" <<container>> as user_service_db
+  database "== База данных сервиса управления устройств\n//<size:12>[SQL postgres]</size>//\n\nХранит данные устройств, данные дома пользователей" <<container>> as device_service_db
+  rectangle "== Шлюз\n//<size:12>[Отвечает за балансировку запросов, авторизацию, управление сессиями]</size>//" <<backendContainer>><<container>> as api_gateway
+  rectangle "== Брокер сообщений\n//<size:12>[java, Kafka]</size>//\n\nцентральный элемент асинхронного взаимодействия сервисов" <<container>> as message_broker
+  rectangle "== Service discovery\n//<size:12>[Golang, consul]</size>//\n\nОтвечает за регистрацию слубж и выдачу данных служб по запросу" <<container>> as service_discovery
+  database "== База данных на запись сервиса телеметрии\n//<size:12>[SQL postgres]</size>//\n\nХранит данные телеметрии устройств осуществляет только запись" <<container>> as telemetry_service_write_main_db
+  database "== База данных на чтение сервиса телеметрии\n//<size:12>[SQL postgres]</size>//\n\nХранит данные телеметрии устройств осуществляет только чтение" <<container>> as telemetry_service_read_replica_db
+
+  rectangle "== SMTP server" <<external_system>> as email_system
+  rectangle "== Система отправки уведомлений\n\nСистема отправки push уведомлений" <<external_system>> as push_system
+
+  rectangle "== Сервис управления устройствами\n<size:12>[container]</size>" <<container_boundary>><<boundary>> as device_service  {
+      rectangle "== DeviceController\n//<size:12>[обработка http и ws запросов]</size>//" <<component>> as DeviceController
+      rectangle "== CommandHandleService\n//<size:12>[Обработчик комманд]</size>//" <<component>> as CommandHandleService
+      rectangle "== DeviceDataReciver\n//<size:12>[Приемник данных телеметрии с устройств]</size>//" <<component>> as DeviceDataReciver
+      rectangle "== QueueLayer\n//<size:12>[Слой для работы с брокером сообщений]</size>//" <<component>> as QueueLayer
+      rectangle "== RepositoryLayer\n//<size:12>[Слой для работы с базой данных]</size>//" <<component>> as RepositoryLayer
+      rectangle "== InfrastructureLayer\n//<size:12>[Слой для взаимодействия с внешными инфраструктурными сервисами]</size>//" <<component>> as InfrastructureLayer
+
+    DeviceController - ->> CommandHandleService : **Uses**
+    DeviceController - ->> DeviceDataReciver : **Uses**
+    DeviceDataReciver - ->> QueueLayer : **Uses**
+    CommandHandleService - ->> RepositoryLayer : **read/write**
+}
+
+RepositoryLayer - ->> device_service_db : **read/write**
+QueueLayer - ->> message_broker <<async>> : **pub/sub**
+InfrastructureLayer - ->> service_discovery : **register/deregister**
+api_gateway - ->> DeviceController <<sync/async>> : **HTTPS/WSS**
+
+
+  rectangle "== Сервис управления пользователями\n<size:12>[container]</size>" <<container_boundary>><<boundary>> as user_service  {
+      rectangle "== UserServiceController\n//<size:12>[обработка http запросов]</size>//" <<component>> as UserServiceController
+      rectangle "== QueueLayer\n//<size:12>[Слой для работы с брокером сообщений]</size>//" <<component>> as UserServiceQueueLayer
+      rectangle "== RepositoryLayer\n//<size:12>[Слой для работы с базой данных]</size>//" <<component>> as UserServiceRepositoryLayer
+      rectangle "== InfrastructureLayer\n//<size:12>[Слой для взаимодействия с внешными инфраструктурными сервисами]</size>//" <<component>> as UserServiceInfrastructureLayer
+      rectangle "== BusinessLayer\n//<size:12>[Бизнес логика]</size>//" <<component>> as UserServiceBusinessLayer
+
+    UserServiceController - ->> UserServiceBusinessLayer : **Uses**
+    UserServiceBusinessLayer - ->> UserServiceQueueLayer : **Uses**
+    UserServiceBusinessLayer - ->> UserServiceRepositoryLayer : **Uses for write read**
+}
+
+UserServiceRepositoryLayer - ->> user_service_db : **read/write**
+UserServiceQueueLayer - ->> message_broker <<async>> : **pub/sub**
+UserServiceInfrastructureLayer - ->> service_discovery : **register/deregister**
+api_gateway - ->> UserServiceController <<sync/async>> : **HTTPS**
+
+  rectangle "== Сервис телеметрии\n<size:12>[container]</size>" <<container_boundary>><<boundary>> as telemetry_service  {
+      rectangle "== TelemetryServiceController\n//<size:12>[обработка http запросов]</size>//" <<component>> as TelemetryServiceController
+      rectangle "== QueueLayer\n//<size:12>[Слой для работы с брокером сообщений]</size>//" <<component>> as TelemetryServiceQueueLayer
+      rectangle "== RepositoryWiteLayer\n//<size:12>[Слой для работы с базой данных для записи]</size>//" <<component>> as TelemetryServiceRepositoryWriteLayer
+      rectangle "== RepositoryReadLayer\n//<size:12>[Слой для работы с базой данных для чтения]</size>//" <<component>> as TelemetryServiceRepositoryReadLayer
+      rectangle "== InfrastructureLayer\n//<size:12>[Слой для взаимодействия с внешными инфраструктурными сервисами]</size>//" <<component>> as TelemetryServiceInfrastructureLayer
+      rectangle "== BusinessLayer\n//<size:12>[Бизнес логика]</size>//" <<component>> as TelemetryServiceBusinessLayer
+
+    TelemetryServiceController - ->> TelemetryServiceBusinessLayer : **Uses**
+    TelemetryServiceBusinessLayer - ->> TelemetryServiceRepositoryWriteLayer : **Uses for write**
+    TelemetryServiceBusinessLayer - ->> TelemetryServiceRepositoryReadLayer : **Uses for read**
+    TelemetryServiceBusinessLayer - ->> TelemetryServiceQueueLayer : **sub**
+}
+
+TelemetryServiceRepositoryWriteLayer - ->> telemetry_service_write_main_db : **write**
+TelemetryServiceRepositoryReadLayer - ->> telemetry_service_read_replica_db : **read**
+TelemetryServiceInfrastructureLayer - ->> service_discovery : **register/deregister**
+api_gateway - ->> TelemetryServiceController : **HTTPS**
+TelemetryServiceQueueLayer - ->> message_broker <<async>> : **sub**
+
+  rectangle "== Сервис нотификации\n<size:12>[container]</size>" <<container_boundary>><<boundary>> as notification_service  {
+      rectangle "== NotificationServiceClient\n//<size:12>[Получение данных с других микросервисов(HTTP)]</size>//" <<component>> as NotificationServiceClient
+      rectangle "== QueueLayer\n//<size:12>[Слой для работы с брокером сообщений]</size>//" <<component>> as NotificationServiceQueueLayer
+      rectangle "== NotificationAdapter\n//<size:12>[Адаптирует отправляет сообщения во внешние сервисы]</size>//" <<component>> as NotificationServiceAdapter
+
+    NotificationServiceAdapter - ->> NotificationServiceClient : **Uses**
+    NotificationServiceAdapter - ->> NotificationServiceQueueLayer : **Uses**
+}
+
+NotificationServiceAdapter - ->> email_system : **Uses**
+NotificationServiceAdapter - ->> push_system : **Uses**
+NotificationServiceQueueLayer - ->> message_broker <<async>> : **sub**
+
+hide stereotype
+legend right
+<#transparent,#transparent>|<color:#000000>**Legend **</color> |
+|<#438DD5><color:#3C7FC0> <U+25AF></color> <color:#FFFFFF> container <size:10></size></color> |
+|<#85BBF0><color:#78A8D8> <U+25AF></color> <color:#000000> component <size:10></size></color> |
+|<#999999><color:#8A8A8A> <U+25AF></color> <color:#FFFFFF> external system <size:10></size></color> |
+|<#transparent><color:#444444> <U+25AF></color> <color:#444444> container boundary <size:10></size></color> |
+|<color:#666666> <U+2500></color> <color:#666666> async <size:10>(dashed)</size></color> |
+|<color:#666666> <U+2500></color> <color:#666666> sync/async <size:10>(dotted)</size></color> |
+endlegend
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
