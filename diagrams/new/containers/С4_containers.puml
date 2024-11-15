@@ -1,0 +1,61 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+SHOW_PERSON_OUTLINE()
+
+title Диагрмма контейнеров для системы "Умный дом"
+top to bottom direction
+AddRelTag("async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DashedLine())
+AddRelTag("sync/async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DottedLine())
+AddElementTag("backendContainer", $fontColor=$ELEMENT_FONT_COLOR, $bgColor="#335DA5", $shape=EightSidedShape(), $legendText="backend container\neight sided")
+
+
+Person(user, "Пользователь", "Пользователь дома")
+
+System_Boundary(smart_home_system, "Умный дом") {
+    Container(device_service, "Сервис управления устройствами", "Golang/Java", "Отвечает за подлключение устройств, управление и получение данных с устройств")
+    Container(user_service, "Сервис пользователя", "Golang/Java", "Отвечает регистрацию пользователя и хранение данных пользователя, личный кабинет")
+    Container(telemetry_service, "Сервис телеметрии", "Golang/Java", "Отвечает хранение данных телеметрии и выдачу данных по ним")
+    Container(notification_service, "Сервис нотификации", "Golang/Java", "Отвечает отправку уведомлений пользователю")
+    Container(service_discovery, "Service discovery", "Golang, consul", "Отвечает за регистрацию слубж и выдачу данных служб по запросу", $tags="backendContainer")
+    Container(api_gateway, "Шлюз", "С++, Kong", "Отвечает за балансировку запросов, авторизацию, управление сессиями", $tags="backendContainer")
+    Container(message_broker, "Брокер сообщений", "java, Kafka", "центральный элемент асинхронного взаимодействия сервисов", $tags="backendContainer")
+    ContainerDb(user_service_db, "База данных сервиса пользователей", "SQL postgres", "Хранит данные пользователя: первональные данные, хэши паролей и т.д")
+    ContainerDb(device_service_db, "База данных сервиса управления устройств", "SQL postgres", "Хранит данные устройств, данные дома пользователей")
+    ContainerDb(telemetry_service_write_main_db, "База данных на запись сервиса телеметрии", "SQL postgres", "Хранит данные телеметрии устройств осуществляет только запись")
+    ContainerDb(telemetry_service_read_replica_db, "База данных на чтение сервиса телеметрии", "SQL postgres", "Хранит данные телеметрии устройств осуществляет только чтение")
+}
+
+System_Ext(device, "Устройство прибор дома", "")
+System_Ext(email_system, "SMTP server", "")
+System_Ext(push_system, "Система отправки уведомлений", "Система отправки уведомлений на мобильные устройства пользователей")
+
+Rel(user, api_gateway, "Uses", "HTTPS")
+Rel(device, api_gateway, "Uses", "WSS", $tags="async")
+
+Rel(api_gateway, device_service, "Uses", "WSS", $tags="async")
+Rel(api_gateway, device_service, "Uses", "HTTPS")
+Rel(api_gateway, user_service, "Uses", "HTTPS")
+Rel(api_gateway, telemetry_service, "Uses", "HTTPS")
+Rel_R(api_gateway, service_discovery, "Uses", "HTTP")
+
+Rel(device_service, message_broker, "Uses", "Kafka protocol", $tags="async")
+Rel(message_broker, device_service, "Uses", "Kafka protocol", $tags="async")
+Rel(device_service, service_discovery, "Uses", "HTTP")
+Rel_Neighbor(device_service, device_service_db, "Uses", "pq")
+
+Rel(user_service, service_discovery, "Uses", "HTTP")
+Rel(user_service, user_service_db, "Uses", "pq")
+Rel(user_service, message_broker, "Uses", "Kafka protocol", $tags="async")
+
+Rel(telemetry_service, service_discovery, "Uses", "HTTP")
+Rel_Neighbor(telemetry_service, telemetry_service_write_main_db, "write queries", "pq")
+Rel_L(telemetry_service, telemetry_service_read_replica_db, "read queries", "pq")
+Rel(message_broker, telemetry_service, "Uses", "Kafka protocol", $tags="async")
+
+Rel(message_broker, notification_service, "Uses", "Kafka protocol", $tags="async")
+Rel(notification_service, email_system, "Uses", "HTTPS")
+Rel(notification_service, push_system, "Uses", "HTTPS")
+
+SHOW_LEGEND()
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+title Система управления отоплением
+
+top to bottom direction
+
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+Person(user, "Пользователь", "Пользователь дома с отоплением")
+System(heating_control_system, "Теплый дом", "Управление отоплением и мониторинг")
+System_Ext(device, "Устройство управления системой отоплениея", "Управляет и собирает данные с системы отопления")
+Rel(user, heating_control_system, "Управляет отоплением и мониторинг", "HTTP")
+Rel_L(heating_control_system, device, "Управляет устройством управления отоплением и собирает данные с устройства", "HTTP")
+
+@enduml

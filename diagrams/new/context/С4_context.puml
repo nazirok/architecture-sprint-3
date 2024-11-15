@@ -1,0 +1,16 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+title Диагрмма контекста для системы "Умный дом"
+top to bottom direction
+AddRelTag("async", $textColor=$ARROW_FONT_COLOR, $lineColor=$ARROW_COLOR, $lineStyle=DashedLine())
+
+Person(user, "Пользователь", "Пользователь дома")
+System(smart_home_system, "Умный дом", "Управление компонентами дома и мониторинг")
+System_Ext(device, "Устройство прибор дома", "")
+Rel(user, smart_home_system, "Управляет приборами дома и мониторинг", "HTTPS")
+Rel_L(smart_home_system, device, "Управление приборами", "WSS", $tags="async")
+Rel_R(device, smart_home_system, "Подключение прибора и отправка телеметрии", "WSS", $tags="async")
+
+SHOW_LEGEND()
+@enduml
