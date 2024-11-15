@@ -1,0 +1,84 @@
+asyncapi: 3.0.0
+info:
+  title: Device service async API
+  version: 1.0.0
+
+servers:
+  kafkaServer:
+    host: some.kafka.addr
+    description: Kafka broker 
+    protocol: kafka
+
+operations:
+  onUserSignedUp:
+    action: receive
+    channel:
+      $ref: '#/channels/userSignedUp'
+  
+  sendTlemetryData:
+    action: send
+    channel:
+      $ref: '#/channels/telemetryData'
+
+  sendEmail:
+    action: send
+    channel:
+      $ref: '#/channels/sendEmail'
+
+
+channels:
+  userSignedUp:
+    description: This channel contains a message per each user who signs up in our application.
+    address: user_signedup
+    messages:
+      userSignedUp:
+        $ref: '#/components/messages/userSignedUp'
+
+  telemetryData:
+    description: This channel for telemetry data from devices.
+    address: devices_telemetry_data
+    messages:
+      device_telemetryData:
+        $ref: '#/components/messages/device_telemetryData'
+
+  sendEmail:
+    description: This channel for telemetry data from devices.
+    address: send_email_addr
+    messages:
+      sendEmailData:
+        $ref: '#/components/messages/sendEmailData'
+
+components:
+  messages:
+    userSignedUp:
+      payload:
+        type: object
+        properties:
+          userId:
+            type: string
+            description: This property describes the id of the user
+          userEmail:
+            type: string
+            description: This property describes the email of the user
+
+    device_telemetryData:
+      payload:
+        type: object
+        properties:
+          device_id:
+            type: string
+          data:
+            type: object
+            additionalProperties:
+              type: string
+
+    sendEmailData:
+      payload:
+        type: object
+        properties:
+          user_email:
+            type: string
+          email_template_key:
+            type: string
+          body:
+            type: string
