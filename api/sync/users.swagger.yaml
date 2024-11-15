@@ -1,0 +1,194 @@
+openapi: 3.0.1
+info:
+  title: Users service
+  description: This is a API in smart house for users microservice
+  version: 1.0.0
+servers:
+  - url: /api/v1/user-service
+paths:
+  /users/login:
+    post:
+      tags:
+        - users
+      summary: login by user login
+      description: login by user login
+      operationId: loginByUserlogin
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/loginBody'
+        required: true
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/authJWTs'
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error' 
+    
+  /users/signup:
+    post:
+      tags:
+        - users
+      summary: signup user
+      description: signup user
+      operationId: signupUser
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/signupBody'
+        required: true
+      responses:
+        '200':
+          description: ok
+          content: {}
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  
+  /users/{userId}:
+    patch:
+      tags:
+        - users
+      summary: update user
+      description: update user info
+      operationId: updateUserInfo
+      security:
+        - AuthToken: []
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+        - name: userId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/updateBody'
+        required: true
+      responses:
+        '200':
+          description: ok
+          content: {}
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error' 
+
+components:
+  schemas:
+    loginBody:
+      type: object
+      properties:
+        login:
+          type: string
+        password:
+          type: string
+
+    authJWTs:
+      type: object
+      properties:
+        accessToken:
+          type: string
+        refreshToken:
+          type: string  
+
+    signupBody:
+      type: object
+      properties:
+        email:
+          type: string
+        name:
+          type: string 
+        surname:
+          type: string   
+        password:
+          type: string
+    
+    updateBody:
+      type: object
+      properties:
+        name:
+          type: string 
+        surname:
+          type: string   
+
+    Error:
+      type: object
+      properties:
+        key:
+          type: string
+        description:
+          type: string
+        code:
+          type: integer
+
+  securitySchemes:
+    AuthToken:
+      type: apiKey
+      name: Authorization
+      in: header

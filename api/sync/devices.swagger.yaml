@@ -1,0 +1,450 @@
+openapi: 3.0.1
+info:
+  title: Devices service
+  description: This is a API in smart house for manage devices
+  version: 1.0.0
+servers:
+  - url: /api/v1/devices-service
+paths:
+  /houses:
+    post:
+      tags:
+        - houses
+      summary: create house for user
+      description: createHouse
+      operationId: createHouse
+      security:
+        - AuthToken: []
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/houseParams'
+        required: true
+      responses:
+        '201':
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/houseResponse'
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+    get:
+      tags:
+        - houses
+      summary: list user houses
+      description: listUserHouses
+      operationId: listUserhouses
+      security:
+        - AuthToken: []
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/houseResponse'
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'  
+
+  /houses/{houseId}:
+    delete:
+      tags:
+        - houses
+      summary: delete user house
+      description: deleteHouse
+      operationId: deletehouse
+      security:
+        - AuthToken: []
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+        - name: houseId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/userDevicesResponse'
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error' 
+
+  /houses/{houseId}/devices:
+    post: 
+      tags:
+        - devices
+      summary: create device for house
+      description: createDeviceForHouse
+      operationId: createDeviceForHouse
+      security:
+        - AuthToken: []
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+        - name: houseId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/deviceParams'
+        required: true
+      responses:
+        '201':
+          description: ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/userDevicesResponse'
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error' 
+
+    get:
+      tags:
+        - devices
+      summary: listUserHouseDevices
+      description: listUserHouseDevices
+      operationId: listUserHouseDevices
+      security:
+        - AuthToken: []
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+        - name: houseId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/userDevicesResponse'
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error' 
+
+  /devices/{deviceId}:
+    patch: 
+      tags:
+        - devices
+      summary: update device info
+      description: updateDeviceinfo
+      operationId: updateDeviceinfo
+      security:
+        - AuthToken: []
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+        - name: deviceId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/deviceUpdateParams'
+        required: true
+      responses:
+        '200':
+          description: ok
+          content: {}
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error' 
+    delete:
+      tags:
+        - devices
+      summary: delete device
+      description: deleteDevice
+      operationId: deleteDevice
+      security:
+        - AuthToken: []
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+        - name: deviceId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: ok
+          content: {}
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error' 
+  
+  /devices/{deviceId}/status:
+    put: 
+      tags:
+        - devices
+      summary: update device status
+      description: updateDeviceStatus
+      operationId: updateDeviceStatus
+      security:
+        - AuthToken: []
+      parameters:
+        - name: X-Request-Id
+          in: header
+          schema:
+            type: string
+        - name: deviceId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/deviceStatusUpdateParams'
+        required: true
+      responses:
+        '200':
+          description: ok
+          content: {}
+        '400':
+          description: Indicates that error occurred during request validation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '403':
+          description: Indicates that resource is forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Indicates that server error occurred during request processing
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error' 
+
+components:
+  schemas:
+    userDevicesResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        description:
+          type: string
+        number:
+          type: string
+        status:
+          type: string
+
+    deviceParams:
+      type: object
+      properties:
+        type:
+          type: string
+        number:
+          type: string
+        description:
+          type: string
+      required:
+        - type
+        - number  
+
+    deviceUpdateParams:
+      type: object
+      properties:
+        description:
+          type: string
+
+    deviceStatusUpdateParams:
+      type: object
+      properties:
+        status:
+          type: string
+          enum:
+            - on
+            - off
+
+    houseParams:
+      type: object
+      properties:
+        address:
+          type: string
+        description:
+          type: string
+      required:
+        - address
+    
+    houseResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        adderess:
+          type: string
+        descpition:
+          type: string
+          
+    Error:
+      type: object
+      properties:
+        key:
+          type: string
+        description:
+          type: string
+        code:
+          type: integer 
+
+  securitySchemes:
+    AuthToken:
+      type: apiKey
+      name: Authorization
+      in: header
+      
