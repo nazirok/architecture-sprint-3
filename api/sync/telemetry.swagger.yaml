@@ -1,0 +1,78 @@
+openapi: 3.0.1
+info:
+  title: Telemetry service
+  description: This is a API in smart house for telemetry microservice
+  version: 1.0.0
+servers:
+  - url: /api/v1/telemetry-service
+paths:
+  /telemetry:
+    get:
+      tags:
+      - telemetry
+      summary: get telemetry info
+      description: getTelemetryInfo
+      operationId: getTelemetryInfo
+      security:
+        - AuthToken: []
+      parameters:
+          - name: filterDeviceId
+            in: query
+            schema:
+              type: string
+      responses:
+          '200':
+            description: ok
+            content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    $ref: '#/components/schemas/telemetryResponse'
+          '400':
+            description: Indicates that error occurred during request validation
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Error'
+          '403':
+            description: Indicates that resource is forbidden
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Error'
+          '500':
+            description: Indicates that server error occurred during request processing
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Error'  
+
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        key:
+          type: string
+        description:
+          type: string
+        code:
+          type: integer 
+    
+    telemetryResponse:
+      type: object
+      properties:
+        devceId:
+          type: string
+        data:
+          type: object
+          additionalProperties:
+            type: string
+
+
+  securitySchemes:
+    AuthToken:
+      type: apiKey
+      name: Authorization
+      in: header

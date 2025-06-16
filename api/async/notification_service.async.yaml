@@ -1,0 +1,37 @@
+asyncapi: 3.0.0
+info:
+  title: Notification service async API
+  version: 1.0.0
+
+servers:
+  kafkaServer:
+    host: some.kafka.addr
+    description: Kafka broker 
+    protocol: kafka
+
+operations:
+  onSendEmail:
+    action: receive
+    channel:
+      $ref: '#/channels/sendEmail'
+
+channels:
+  sendEmail:
+    description: This channel for telemetry data from devices.
+    address: send_email_addr
+    messages:
+      sendEmailData:
+        $ref: '#/components/messages/sendEmailData'
+
+components:
+  messages:
+    sendEmailData:
+      payload:
+        type: object
+        properties:
+          user_email:
+            type: string
+          email_template_key:
+            type: string
+          body:
+            type: string
